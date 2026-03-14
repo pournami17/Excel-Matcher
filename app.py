@@ -1,3 +1,15 @@
+# Reads the PDF exported from a monday.com form
+
+# Extracts FAQ question–answer pairs
+
+# Reads the Microsoft Excel Template file
+
+# Matches similar questions using AI embeddings
+
+# Writes the best answer into the Excel sheet
+
+# Saves the final Excel file
+
 import streamlit as st
 import pdfplumber
 import pandas as pd
@@ -12,8 +24,8 @@ st.title("PDF to FAQ Excel Matcher")
 # ----------------------------
 # File Upload
 # ----------------------------
-pdf_file = st.file_uploader("Upload PDF", type=["pdf"])
-excel_file = st.file_uploader("Upload Excel", type=["xlsx"])
+pdf_file = st.file_uploader("Upload the Monday Board form in PDF format", type=["pdf"])
+excel_file = st.file_uploader("Upload the Excel Template", type=["xlsx"])
 
 # ----------------------------
 # Load model
