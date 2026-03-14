@@ -1,0 +1,16 @@
+# Virtual environment
+faq_env/
+.env/
+.envrc
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit
+.streamlit/
+
+# OS files
+.DS_Store
